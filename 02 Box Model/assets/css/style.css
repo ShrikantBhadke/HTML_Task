@@ -1,0 +1,17 @@
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+div{
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    background-color: orange;
+}
+
+img{
+    height: 100px;
+    width: 150px;
+}

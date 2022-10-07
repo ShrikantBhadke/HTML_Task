@@ -1,0 +1,18 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+table,th, td {
+    border: 2px solid red;
+    padding: 10px;
+    text-align: center;
+    border-collapse:collapse ;
+	color:white;
+}
+th{
+    background-color: aquamarine;
+}
+td{
+    background-color: black;
+}

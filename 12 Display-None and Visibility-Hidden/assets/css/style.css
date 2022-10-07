@@ -1,0 +1,38 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+.main-section{
+	background-color: orange;
+	border: 4px solid black;
+	height: 200px;
+	width: 200px;
+	border-radius:50px;
+	box-shadow: 4px 4px 10px;
+	display: inline-block;
+	text-align: center;
+	padding: 20px;
+	margin: 30px;
+}
+
+.main-section .box{
+	color: green;
+	height: 100px;
+	width: 100px;
+	border: 5px solid red;
+	border-radius: 10px;
+	margin:25px;
+	padding: 15px;
+	background-color: blue;
+	box-shadow: 5px 5px 5px;
+}
+.main-box{
+	display: none;
+	
+}
+
+.box2{
+	visibility: hidden;
+}

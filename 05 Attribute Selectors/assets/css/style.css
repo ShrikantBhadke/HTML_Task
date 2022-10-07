@@ -1,0 +1,42 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+body {
+	background-color:aqua;
+}
+div p {
+	padding:20px;
+	background-color:green;
+	color:white;
+	margin:10px;	
+}
+.adjacent > p{
+	background-color:red;
+	color:black;
+	padding: 5px;
+	margin:10px;
+	
+}
+.title + p {
+	background-color: yellow;
+	color:red;
+	padding:20px;
+	margin: 0 auto;
+	
+}
+.title + span {
+	background-color:white;
+	color:black;
+	margin:10px;
+	padding:20px;
+	display: inline-block;
+}
+ div ~ p {
+	padding:20px;
+	margin:50px;
+	background-color:black;
+	color:gold;
+	margin:10px;
+}

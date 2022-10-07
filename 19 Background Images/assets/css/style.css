@@ -1,0 +1,14 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.images{
+	background-image: url(https://media.istockphoto.com/id/640251856/photo/young-woman-relaxes-on-lake-pier-looks-at-landscape.webp?s=612x612&w=is&k=20&c=pFcYswf9X7eq-pXAdCmbayHTMtmEbB3-axQUu4vpDTU=);
+	height: 100vh;
+	background-repeat:no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-attachment: fixed;
+}

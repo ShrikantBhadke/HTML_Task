@@ -1,0 +1,49 @@
+*{
+	padding:0;
+	margin:0;
+	box-sizing:border-box;
+}
+.section1{
+	background-color:aqua;
+	padding:20px;
+	border:2px solid red;
+	margin:20px auto;
+	height:500px;
+	width:300px;
+	
+}
+.section2{
+	background-color:aqua;
+	padding:20px;
+	border:2px solid red;
+	margin:20px;
+	height:500px;
+	width:300px;
+	
+}
+.section3{
+	background-color:aqua;
+	padding:20px;
+	border:2px solid red;
+	margin:20px;
+	height:500px;
+	width:300px;
+	
+}
+
+
+  h1{
+	color: red;
+	
+}
+p{
+	color: blue;
+	
+}
+ul{
+	padding-left:20px;
+	margin-top:20px;
+}
+.text{
+	color:purple;
+}

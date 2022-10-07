@@ -1,0 +1,43 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+p{
+	padding: 6px;
+	color: #fff;
+	margin: 1px;
+	text-align: center;
+}
+body{
+	background-color: lightpink;
+}
+.mainbox{
+	height: 50px;
+	width: 100px;
+	background-color: green;
+	border-radius: 50%;
+	animation: movingBox 10s ease-in-out 1;
+}
+
+@keyframes movingBox{
+	0%{
+		margin-left: 0;
+	}
+
+	25%{
+		margin-left: calc(100% - 100px);
+		margin-top: calc(70vh - 100px);
+	}
+	 50%{ 
+		margin-left: 0;
+		margin-top: calc(100vh - 100px);
+	}
+	75%{
+		margin-left: calc(100% - 100px);
+		margin-top: 0;
+	}
+	100%{
+		margin: 0;
+	} 
+}
