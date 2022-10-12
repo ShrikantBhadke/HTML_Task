@@ -1,0 +1,125 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Desktop First Approch RWD */
+
+a:link,
+a:active,
+a:focus {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+.header {
+	background-color: black;
+}
+
+.row,
+.row::after,
+.row::before {
+	width: 100%;
+	display: table;
+	clear: both;
+}
+
+[class^="col"] {
+	float: left;
+	padding: 0 15px;
+}
+
+.col3 {
+	width: 25%;
+}
+
+.col9 {
+	width: 75%;
+}
+
+.navbar {
+	display: inline-block;
+}
+
+
+
+.logo {
+	margin-left: 20px;
+}
+
+.toggleBtn {
+	display: none;
+}
+
+.logo {
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 20px 0px;
+	display: inline-block;
+}
+
+.navbar li {
+	display: inline-block;
+	margin-right: 5px;
+}
+
+.navbar li a {
+	padding: 20px;
+	display: inline-block;
+	color: #fff;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
+}
+
+.navbar li a:hover {
+	background-color: orange;
+}
+
+.active {
+	background-color: orange;
+}
+
+@media all and (max-width:640px) {
+
+	.col3,
+	.col9 {
+		width: 100%;
+	}
+
+	.navbar {
+		display: none;
+	}
+
+	.navbar.show {
+		display: block;
+	}
+
+	.toggleBtn {
+		display: inline-block;
+		color: #fff;
+		font-size: 35px;
+		padding: 10px 20px;
+		float: right;
+	}
+	.navbar li{
+		margin: 0 0 5px 0;
+	}
+	.navbar li, .navbar li a{
+		width: 100%;
+		text-align: left;
+	}
+}
