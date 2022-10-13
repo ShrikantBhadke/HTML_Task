@@ -1,0 +1,122 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Mobile First Approch RWD */
+
+a:link,
+a:active,
+a:focus {
+	text-decoration: none;
+}
+
+ul {
+	list-style: none;
+}
+
+.text-right {
+	text-align: right;
+}
+
+.container {
+	margin: 0 auto;
+	width: 1200px;
+}
+
+.header {
+	background-color: black;
+}
+
+.row,
+.row::after,
+.row::before {
+	width: 100%;
+	display: table;
+	clear: both;
+}
+
+[class^="col"] {
+	float: left;
+	padding: 0 15px;
+}
+
+.col3,.col9 {
+	width: 100%;
+}
+
+.navbar {
+	display: none;
+}
+.show{
+	display: block;
+}
+
+
+.logo {
+	margin-left: 20px;
+}
+
+.toggleBtn {
+	display: inline-block;
+	float: right;
+	color: #fff;
+	font-size: 34px;
+	padding: 15px;
+}
+
+.logo {
+	font-weight: bold;
+	color: #fff;
+	text-transform: uppercase;
+	padding: 20px 0px;
+	display: inline-block;
+}
+
+.navbar li {
+	display: block;
+	margin-bottom: 5px;
+	/* width: 100%; */
+}
+
+.navbar li a {
+	padding: 20px;
+	display: inline-block;
+	color: #fff;
+	text-transform: uppercase;
+	transition: all 0.3s ease-in-out;
+	width: 100%;
+	text-align: left;
+}
+
+.navbar li a:hover {
+	background-color: orange;
+}
+
+.active {
+	background-color: orange;
+}
+
+@media all and (min-width:900px) {
+	.col3{
+		width: 25%;
+	}
+	.col9{
+		width:75%;
+	}
+	.toggleBtn{
+		display: none;
+	}
+	.navbar{
+		display: block;
+	}
+	.navbar{
+		display: inline-block;
+	}
+	.navbar li{
+		display: inline-block;
+		margin: 0;
+	}
+	
+}
