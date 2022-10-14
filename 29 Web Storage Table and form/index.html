@@ -20,20 +20,20 @@
         <div class="col-md-4">
           <form id="submitForm">
             <div class="form-group">
-              <label for="fname">First Name</label>
+              <label for="fname">First Name*</label>
               <input type="text" id="fname" class="form-control" required />
             </div>
             <div class="form-group">
-              <label for="lname">Last Name</label>
+              <label for="lname">Last Name*</label>
               <input type="text" id="lname" class="form-control" required />
             </div>
             <div class="form-group">
-              <label for="email">Email</label>
-              <input type="text" id="email" class="form-control" required />
+              <label for="email">Email*</label>
+              <input type="text" id="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
             </div>
             <div class="form-group">
-              <label for="contact">Contact</label>
-              <input type="text" id="contact" class="form-control" required />
+              <label for="contact">Contact*</label>
+              <input type="text" id="contact" class="form-control" pattern = "[0-9]{1,10}$" required />
             </div>
             <button type="submit" class="btn btn-primary mt-4 float-right">Submit</button>
           </form>
@@ -47,6 +47,8 @@
                 <th>Last Name</th>
                 <th>Email</th>
                 <th>Contact</th>
+                <th>Edit</th>
+                <th>Delete</th>
               </tr>
             </thead>
             <tbody id="tableContent">
@@ -56,6 +58,8 @@
                 <td>Bhadke</td>
                 <td>shri.sb11@gmail.com</td>
                 <td>124535565656</td>
+                <td><button class="btn btn-primary">Edit</button></td>
+                <td><button class="btn btn-danger">Delete</button></td>
               </tr> -->
             </tbody>
           </table>
