@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/assets/css/style.css" />
   </head>
   <body>
-    <h1 class="bg-primary text-white  mb-4 p4">CRUD Using Web Storage</h1>
+    <h1 class="bg-primary text-white  mb-4 p-4">CRUD Using Web Storage</h1>
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -29,43 +29,50 @@
             </div>
             <div class="form-group">
               <label for="email">Email*</label>
-              <input type="text" id="email" class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required />
+              <input type="text" id="email" class="form-control" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-z]{2,4}$" required />
             </div>
             <div class="form-group">
               <label for="contact">Contact*</label>
               <input type="text" id="contact" class="form-control" pattern = "[0-9]{1,10}$" required />
             </div>
-            <button type="submit" class="btn btn-primary mt-4 float-right">Submit</button>
+            <button type="submit" id="submitBtn" value="submit" class="btn btn-primary mt-4 float-right">Submit</button>
+            <button type="button" id="updateBtn" value="button" class="btn btn-primary mt-4 float-right d-none">Update</button>
           </form>
         </div>
         <div class="col-md-8">
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>Sr.No.</th>
-                <th>First Name</th>
-                <th>Last Name</th>
-                <th>Email</th>
-                <th>Contact</th>
-                <th>Edit</th>
-                <th>Delete</th>
-              </tr>
-            </thead>
-            <tbody id="tableContent">
-              <!-- <tr>
-                <td>1</td>
-                <td>Shrikant</td>
-                <td>Bhadke</td>
-                <td>shri.sb11@gmail.com</td>
-                <td>124535565656</td>
-                <td><button class="btn btn-primary">Edit</button></td>
-                <td><button class="btn btn-danger">Delete</button></td>
-              </tr> -->
-            </tbody>
-          </table>
+          <div class="table-responsive">
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Sr.No.</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Email</th>
+                  <th>Contact</th>
+                  <th>Edit</th>
+                  <th>Delete</th>
+                </tr>
+              </thead>
+              <tbody id="tableContent">
+                <!-- <tr>
+                  <td>1</td>
+                  <td>Shrikant</td>
+                  <td>Bhadke</td>
+                  <td>shri.sb11@gmail.com</td>
+                  <td>124535565656</td>
+                  <td><button class="btn btn-primary">Edit</button></td>
+                  <td><button class="btn btn-danger">Delete</button></td>
+                </tr> -->
+              </tbody>
+            </table>
+          </div>
         </div>
       </div>
     </div>
     <script src="/assets/js/app.js"></script>
   </body>
 </html>
+
+
+
+
